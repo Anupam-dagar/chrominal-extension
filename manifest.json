@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Chrominal",
+    "description": "Run you code from the browser.",
+    "version": "1",
+    "author": "Anupam Dagar",
+    "browser_action": {
+        "default_title": "Chrominal"
+    },
+    "content_security_policy": "script-src 'self' http://localhost:8080 https://ajax.googleapis.com; object-src 'self'",
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "permissions": [
+        "activeTab",
+        "http://localhost/"
+    ]
+}
