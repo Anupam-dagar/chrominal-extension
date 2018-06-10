@@ -5,7 +5,6 @@ $('#send').on('click', function (event) {
     var code = editor.getValue();
     var data = {}
     data["code"] = code;
-    console.log(data);
     event.preventDefault();
     $.ajaxSetup({
         headers: { "X-CSRFToken": '{{csrf_token}}' }
@@ -16,8 +15,10 @@ $('#send').on('click', function (event) {
         data: data,
         datatype: 'json',
         success: function (data) {
+            var output = data.success
+            output = output.replace(/(?:\r\n|\r|\n)/g, '<br>');
             $("#output").empty();
-            $("#output").html("<p>" + data.success + "</p>");
+            $("#output").html("<p>" + output + "</p>");
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
             console.log(errorThrown);
