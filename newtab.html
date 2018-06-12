@@ -2,18 +2,125 @@
 <html>
   <head>
     <title>Test</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="abc.css">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/abc.css">
+    <link rel="stylesheet" href="static/css/nav.css">    
   </head>
     <body>
-        <div id="editor"></div>
-        <button id="compilec">compile c</button>
-        <button id="compilecpp">compile cpp</button>        
+        <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="http://justinfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                  
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-laptop fa-2x"></i>
+                        <span class="nav-text">
+                            Stars Components
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-list fa-2x"></i>
+                        <span class="nav-text">
+                            Forms
+                        </span>
+                    </a>
+                    
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-folder-open fa-2x"></i>
+                        <span class="nav-text">
+                            Pages
+                        </span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bar-chart-o fa-2x"></i>
+                        <span class="nav-text">
+                            Graphs and Statistics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-font fa-2x"></i>
+                        <span class="nav-text">
+                           Quotes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa fa-table fa-2x"></i>
+                        <span class="nav-text">
+                            Tables
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Maps
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>  
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <!-- Card Projects -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-content">
+                                <div id="editor"></div>
+                        
+                        <div class="card-action">
+                          <button class="btn btn-primary">Compile</button>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+          
         <div id="output"></div>
-    <script src="jquery.min.js"></script>
-    <script src="src-noconflict/ace.js"></script>
-    <script src="src-noconflict/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
-    <script src="src-noconflict/mode-c_cpp.js" type="text/javascript" charset="utf-8"></script>
-    <script src="abc.js"></script>
+      </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/src-noconflict/ace.js"></script>
+    <script src="static/src-noconflict/theme-twilight.js" type="text/javascript" charset="utf-8"></script>
+    <script src="static/src-noconflict/mode-c_cpp.js" type="text/javascript" charset="utf-8"></script>
+    <script src="static/js/abc.js"></script>
 </body>
 </html>
