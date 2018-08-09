@@ -1,7 +1,6 @@
 var editor = ace.edit("editor");
 editor.setTheme("ace/theme/monokai");
 editor.getSession().setMode("ace/mode/c_cpp");
-
 $('#compilec').on('click', function (event) {
     var code = editor.getValue();
     var data = {}
